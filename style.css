@@ -26,8 +26,8 @@ a{
     padding: 1em;
 }
 
-.brand{
-    font-size: 1.2rem;
+.brand > h1{
+    font-size: 24px;
 }
 
 .links,.navbar{
@@ -44,16 +44,19 @@ a{
     padding: 7em 9em 5em 9em;
 }
 
-.container-text > h1{
-    margin-bottom: .5em;
-}
-
 .container-text{
     width: 70%;
 }
 
-.container-text > p{
+.container-text > h1{
+    font-size: 48px;
+    margin-bottom: .5em;
+    width: 70%;
+}
+
+.container-text-p{
     font-size: 18px;
+    width: 70%;
 }
 
 img{
@@ -61,13 +64,38 @@ img{
 }
 
 .button{
+    cursor: pointer;
     background-color: #3882F6;
     display: inline-block;
     padding: .4em 2em;
-    margin-top: 1em;
+    margin: 1em 0;
     border-radius: 10px;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+@media screen and (max-width:900px){
+    .container{
+        flex-wrap: wrap;
+        padding: 3em;
+    }
+    .container-text > h1,.container-text,.container-text-p{
+        width: 100%;
+    }
+
+    img{
+        margin-top: 2em;
+        width: 100%;
+    }
+    
+}
+
+/* RANDOM */
+
+.card-body{
+    border: 2px solid #3882F6;
+    width: 40px;
+    height: 40px;
 }
 
 
