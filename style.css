@@ -41,7 +41,7 @@ a {
   display: flex;
 }
 .links > li > a {
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .links > li > a:hover {
@@ -216,4 +216,82 @@ img {
   color: white;
   display: block;
   width: 100%;
+}
+
+@media screen and (max-width: 1020px) {
+  .navbar {
+    justify-content: space-around;
+    margin: 0;
+  }
+  .links {
+    margin: 0;
+  }
+  .brand > h1 {
+    font-size: 20px;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    padding: 3em;
+  }
+  .container-text > h1,
+  .container-text,
+  .container-text-p {
+    width: 100%;
+  }
+
+  img {
+    margin-top: 2em;
+    width: 100%;
+  }
+
+  .cards-group {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .card {
+    width: 100%;
+    text-align: center;
+    margin: 1em 0;
+  }
+  .card-desc {
+    margin: 0.5em 0;
+  }
+
+  #quote {
+    padding: 5em;
+  }
+  .quote-text {
+    font-size: 20px;
+    width: 100%;
+  }
+  .author {
+    font-size: 14px;
+    margin: 0.5em;
+  }
+
+}
+
+@media screen and (max-width:900px){
+  .sign-up-contents {
+    display: inline-block;
+    padding: 1em 2em;
+  }
+
+
+  .sign-up-button-text {
+    display: inline-block;
+    margin: 1em 0;
+    color: #e5e7eb;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .sign-up-text {
+    display: static;
+    width: 100%;
+  }
+  
 }
